@@ -14,11 +14,11 @@ def prepare_features(df: pd.DataFrame):
     Select features
     """
     X = df[["Dollars"]]
-    Y = df[["Frieght"]]
+    Y = df[["Freight"]]
     return X,Y
 
 def split_data(X,Y,test_size=0.2,random_state=42):
     return train_test_split(
-        X.Y,test_size=test_size,random_state=random_state
+        X,Y,test_size=test_size,random_state=random_state
     )
     
