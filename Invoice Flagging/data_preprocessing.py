@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 
 # --- Load invoice data from SQLite ---
 def load_invoice_data():
-    conn = sqlite3.connect("D:\Machine-Learning-Proj\data\inventory.db)
+    conn = sqlite3.connect(r"D:\Machine-Learning-Proj\data\inventory.db")
     query = """
     WITH purchase_agg AS (
         SELECT 
@@ -26,7 +26,7 @@ def load_invoice_data():
         vi.Dollars AS invoice_dollars,
         vi.Freight,
         julianday(vi.InvoiceDate) - julianday(vi.PODate) AS days_po_to_invoice,
-        (julianday(vi.PayDate) - julianday(vi.Invoicedate)) AS days_to_pay,
+        (julianday(vi.PayDate) - julianday(vi.InvoiceDate)) AS days_to_pay,
         pa.total_brands,
         pa.total_item_quantity,
         pa.total_item_dollars,
