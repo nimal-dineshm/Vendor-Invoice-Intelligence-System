@@ -1,4 +1,5 @@
 import sqlite3
+import joblib
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import make_scorer, f1_score, confusion_matrix
@@ -8,7 +9,7 @@ from sklearn.model_selection import train_test_split
 
 # --- Load invoice data from SQLite ---
 def load_invoice_data():
-    conn = sqlite3.connect(r"D:\Machine-Learning-Proj\data\inventory.db")
+    conn = sqlite3.connect("D:\Machine-Learning-Proj\data\inventory.db")
     query = """
     WITH purchase_agg AS (
         SELECT 
@@ -31,11 +32,12 @@ def load_invoice_data():
         pa.total_item_quantity,
         pa.total_item_dollars,
         pa.avg_receiving_delay
-    FROM vendor_invoices vi
+    FROM vendor_invoice vi
     LEFT JOIN purchase_agg pa
       ON vi.PONumber = pa.PONumber
     """
     df = pd.read_sql_query(query, conn)
+    df = df.fillna(0)
     conn.close()
     return df
 
@@ -64,4 +66,4 @@ def scale_features(X_train,X_test,scaler_path):
     X_trained_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
     joblib.dump(scaler,'models/scaler.pkl')
-    return X_train_scaled,X_test_scaled
+    return X_trained_scaled,X_test_scaled

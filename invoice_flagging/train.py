@@ -1,4 +1,5 @@
-from modeling_evaluation import train_random_forest, evaluate_classifier
+from data_preprocessing import load_invoice_data, apply_labels, split_data, scale_features
+from modelling_evaluation import train_random_forest, evaluate_classifier
 import joblib
 
 FEATURES = [
