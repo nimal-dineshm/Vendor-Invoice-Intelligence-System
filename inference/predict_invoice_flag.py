@@ -47,7 +47,7 @@ if __name__ == "__main__":
     # Row 3: Small mismatch (100 vs 150) -> Should flag as 1
     sample_data = {
         "invoice_quantity": [100, 50, 10, 5],
-        "invoice_dollars": [5000, 2000, 500, 100],
+        "invoice_dollars": [5000, 2000, 50, 100],
         "Freight": [200, 100, 50, 20],
         "total_item_quantity": [150, 80, 20, 10],
         "total_item_dollars": [7500, 3000, 800, 150]

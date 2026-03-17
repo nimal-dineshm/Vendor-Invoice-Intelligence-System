@@ -4,14 +4,12 @@ import numpy as np
 from inference.predict_freight import predict_freight_cost
 from inference.predict_invoice_flag import predict_invoice_flag
 
-# --- Page Configuration ---
 st.set_page_config(
     page_title="Vendor Invoice Intelligence Portal",
     page_icon="📦",
     layout="wide"
 )
 
-# --- Header Section ---
 st.markdown("# 📦 Vendor Invoice Intelligence Portal")
 st.markdown("### AI-Driven Freight Cost Prediction & Invoice Risk Flagging")
 
@@ -23,7 +21,6 @@ This internal analytics portal leverages machine learning to:
 """)
 st.divider()
 
-# --- Sidebar ---
 st.sidebar.title("🔍 Model Selection")
 selected_model = st.sidebar.radio(
     "Choose Prediction Module",
@@ -41,7 +38,6 @@ st.sidebar.markdown("""
 - ⚙️ Faster finance operations
 """)
 
-# --- MODULE 1: Freight Cost Prediction ---
 if selected_model == "Freight Cost Prediction":
     st.subheader("🚚 Freight Cost Prediction")
 
@@ -64,7 +60,6 @@ if selected_model == "Freight Cost Prediction":
         st.success("Prediction completed successfully.")
         st.metric(label="📊 Estimated Freight Cost", value=f"${prediction[0]:,.2f}")
 
-# --- MODULE 2: Invoice Manual Approval Flag ---
 elif selected_model == "Invoice Manual Approval Flag":
     st.subheader("🚨 Invoice Manual Approval Prediction")
 
