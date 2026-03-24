@@ -3,12 +3,11 @@ import joblib
 import pandas as pd
 
 def load_model():
-    base_path = os.path.dirname(__file__)
+    current_dir = os.path.dirname(os.path.abspath(__file__))
     
-    model_path = os.path.join(base_path, "..", "models", "predict_freight_model.pkl")
+    model_path = os.path.join(current_dir, "..", "models", "predict_freight_model.pkl")
     
-    with open(model_path, "rb") as f:
-        return joblib.load(f)
+    return joblib.load(model_path)
 
 def predict_freight_cost(input_data):
     """
