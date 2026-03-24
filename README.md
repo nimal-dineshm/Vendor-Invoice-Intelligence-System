@@ -5,16 +5,16 @@
 
 ## 📌 Table of Contents
 
-  * [Project Overview](https://www.google.com/search?q=%23project-overview)
-  * [Business Objectives](https://www.google.com/search?q=%23business-objectives)
-  * [Data Sources](https://www.google.com/search?q=%23data-sources)
-  * [Exploratory Data Analysis](https://www.google.com/search?q=%23exploratory-data-analysis)
-  * [Models Used](https://www.google.com/search?q=%23models-used)
-  * [Evaluation Metrics](https://www.google.com/search?q=%23evaluation-metrics)
-  * [Application](https://www.google.com/search?q=%23application)
-  * [Project Structure](https://www.google.com/search?q=%23project-structure)
-  * [How to Run This Project](https://www.google.com/search?q=%23how-to-run-this-project)
-  * [Author & Contact](https://www.google.com/search?q=%23author--contact)
+  * [Project Overview](#project-overview)
+  * [Business Objectives](#business-objectives)
+  * [Data Sources](#data-sources)
+  * [Exploratory Data Analysis](#exploratory-data-analysis)
+  * [Models Used](#models-used)
+  * [Evaluation Metrics](#evaluation-metrics)
+  * [Application](#application)
+  * [Project Structure](#project-structure)
+  * [How to Run This Project](#how-to-run-this-project)
+  * [Author & Contact](#author--contact)
 
 -----
 
@@ -189,9 +189,6 @@ streamlit run app.py
 ## Author & Contact
 
 **Nimal Dinesh M** AI/ML Enthusiast
-📧 Email: nimaldineshm128@gmail.com  
-🔗 [LinkedIn]([https://www.google.com/search?q=%23](https://www.linkedin.com/in/nimal-dinesh-m-7508272bb))  
+📧 Email: nimaldineshm128@gmail.com(mailto:nimaldineshm128@gmail.com)
+🔗 [LinkedIn](https://www.linkedin.com/in/nimal-dinesh-m-7508272bb)  
 
------
-
-Would you like me to help you refine any of the project descriptions or add a "Requirements" section with the necessary libraries (like `streamlit`, `scikit-learn`, etc.)?
