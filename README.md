@@ -189,6 +189,6 @@ streamlit run app.py
 ## Author & Contact
 
 **Nimal Dinesh M** AI/ML Enthusiast
-📧 Email: nimaldineshm128@gmail.com(mailto:nimaldineshm128@gmail.com)
+📧 Email: nimaldineshm128@gmail.com
 🔗 [LinkedIn](https://www.linkedin.com/in/nimal-dinesh-m-7508272bb)  
 
