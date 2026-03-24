@@ -5,16 +5,16 @@
 
 ## 📌 Table of Contents
 
-  * [Project Overview](#project-overview)
-  * [Business Objectives](#business-objectives)
-  * [Data Sources](#data-sources)
-  * [Exploratory Data Analysis](#exploratory-data-analysis)
-  * [Models Used](#models-used)
-  * [Evaluation Metrics](#evaluation-metrics)
-  * [Application](#application)
-  * [Project Structure](#project-structure)
-  * [How to Run This Project](#how-to-run-this-project)
-  * [Author & Contact](#author--contact)
+  * [Project Overview](#-project-overview)
+  * [Business Objectives](#-business-objectives)
+  * [Data Sources](#-data-sources)
+  * [Exploratory Data Analysis](#-exploratory-data-analysis)
+  * [Models Used](#-models-used)
+  * [Evaluation Metrics](#-evaluation-metrics)
+  * [Application](#-application)
+  * [Project Structure](#-project-structure)
+  * [How to Run This Project](#-how-to-run-this-project)
+  * [Author & Contact](#-author--contact)
 
 -----
 
